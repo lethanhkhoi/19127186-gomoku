@@ -8,7 +8,7 @@ import {
 } from "../../utils/helperFunction";
 import Board from "../board";
 
-const Game = () => {
+const HomePage = () => {
   const [history, setHistory] = useState([
     {
       squares: Array(25).fill(null),
@@ -93,13 +93,18 @@ const Game = () => {
       </div>
       <div className="game-info">
         <div>{status}</div>
-        <div style={{"marginBottom":"20px"}}>
-          <button onClick={() => setIsAsc(true)} >Ascending</button>
-          <button onClick={() => setIsAsc(false)} style={{"marginLeft":"20px"}}>Descending</button>
+        <div style={{ marginBottom: "20px" }}>
+          <button onClick={() => setIsAsc(true)}>Ascending</button>
+          <button
+            onClick={() => setIsAsc(false)}
+            style={{ marginLeft: "20px" }}
+          >
+            Descending
+          </button>
         </div>
         <ol>
           {list.map((step, move) => {
-            const index = move==0 || isAsc? move : list.length - move;
+            const index = move == 0 || isAsc ? move : list.length - move;
             const desc = index
               ? "Go to move #" + index + " " + findRowAndCol(index - 1, count)
               : "Go to game start";
@@ -131,4 +136,4 @@ const Game = () => {
   );
 };
 
-export default Game;
+export default HomePage;
