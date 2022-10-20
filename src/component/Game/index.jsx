@@ -2,7 +2,6 @@ import "./index.css";
 import React, { useEffect, useState } from "react";
 import { ReactDOM } from "react";
 import Modal from "antd/lib/modal/Modal";
-import "antd/dist/antd.css";
 import {
   calculateWinner,
   findRowAndCol,
