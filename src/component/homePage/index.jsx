@@ -6,7 +6,7 @@ import {
   findRowAndCol,
   findCurrentClick,
 } from "../../utils/helperFunction";
-import Board from "../board";
+import Board from "../board/index";
 
 const HomePage = () => {
   const [history, setHistory] = useState([

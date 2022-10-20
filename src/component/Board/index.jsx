@@ -1,4 +1,4 @@
-import Square from "../square";
+import Square from "../square/index";
 
 const Board = (props) => {
   return (
