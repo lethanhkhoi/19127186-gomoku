@@ -1,4 +1,4 @@
-import Square from "../square";
+import Square from "../square/index.jsx";
 
 const Board = (props) => {
   return (

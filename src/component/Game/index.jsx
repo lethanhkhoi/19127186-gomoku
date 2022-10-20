@@ -8,7 +8,7 @@ import {
   findRowAndCol,
   findCurrentClick,
 } from "../../utils/helperFunction";
-import Board from "../board";
+import Board from "../board/index.jsx";
 
 const Game = () => {
   const [history, setHistory] = useState([
