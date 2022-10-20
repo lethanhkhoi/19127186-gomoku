@@ -7,11 +7,7 @@ import Game from './component/game';
 function App() {
   return (
     <div className="App">
-      <BrowserRouter>
-        <Routes>
-          <Route index element={<Game />}></Route>
-        </Routes>
-      </BrowserRouter>
+      <Game />
     </div>
   );
 }
