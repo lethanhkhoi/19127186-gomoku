@@ -93,9 +93,9 @@ const Game = () => {
       </div>
       <div className="game-info">
         <div>{status}</div>
-        <div style={{"margin-bottom":"20px"}}>
+        <div style={{"marginBottom":"20px"}}>
           <button onClick={() => setIsAsc(true)} >Ascending</button>
-          <button onClick={() => setIsAsc(false)} style={{"margin-left":"20px"}}>Descending</button>
+          <button onClick={() => setIsAsc(false)} style={{"marginLeft":"20px"}}>Descending</button>
         </div>
         <ol>
           {list.map((step, move) => {
